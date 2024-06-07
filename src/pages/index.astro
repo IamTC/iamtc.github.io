@@ -14,6 +14,6 @@ const projects = await Astro.glob("./project/**/*.md");
 
 <Layout content={{ lang: "en", title: "Home", tags: [], description: "AAA" }}>
   <div class="main">
-    <Intro />
+    <Intro client:load />
   </div>
 </Layout>
