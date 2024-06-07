@@ -1,0 +1,21 @@
+.IntroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .title {
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+
+  .name {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+
+  .occupation {
+    margin: 0;
+    margin-top: 0.25rem;
+  }
+}

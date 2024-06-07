@@ -1,7 +1,6 @@
 ---
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.jsx';
-import Nav from '../components/Nav/index.jsx';
 import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
 
 const projects = Astro.fetchContent('./project/*.md')
@@ -20,7 +19,6 @@ const projects = Astro.fetchContent('./project/*.md')
     </style>
   </head>
   <body>
-    <Nav />
     <div class="wrapper">
       <h1 class="title mt4 mb4">All Projects</h1>
       <div class="grid">

@@ -1,0 +1,58 @@
+$colorMain: rgb(170, 49, 226);
+$colorAccent: #9d93ff;
+
+.ProfileImageWrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  background: $colorMain;
+  background-image: linear-gradient(90deg, $colorMain, $colorAccent);
+  border-top-left-radius: 98% 63%;
+  border-top-right-radius: 58% 98%;
+  border-bottom-right-radius: 26% 54%;
+  border-bottom-left-radius: 47% 90%;
+
+  .Circle {
+    position: absolute;
+    width: 150px;
+    height: 165px;
+    border-radius: 50%;
+    background: $colorMain;
+    z-index: 1;
+  }
+
+  .LeftTop {
+    top: 0px;
+    left: 8px;
+    border-top-left-radius: 45px;
+    width: 179px;
+    border-bottom-left-radius: 46px;
+  }
+
+  .LeftBottom {
+    width: 214px;
+    bottom: -15px;
+    left: 5px;
+    height: 190px;
+    background: $colorMain;
+  }
+
+  .Cutout {
+    left: -8px;
+    top: 64px;
+    width: 147px;
+    height: 134px;
+  }
+
+  img {
+    z-index: 3;
+    margin-top: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: 8px;
+    border-radius: 50%;
+    border-bottom-right-radius: 72px;
+  }
+}
