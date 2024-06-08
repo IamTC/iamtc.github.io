@@ -13,38 +13,6 @@ $colorAccent: #9d93ff;
   border-bottom-right-radius: 26% 54%;
   border-bottom-left-radius: 47% 90%;
 
-  .Circle {
-    position: absolute;
-    width: 150px;
-    height: 165px;
-    border-radius: 50%;
-    background: $colorMain;
-    z-index: 1;
-  }
-
-  .LeftTop {
-    top: 0px;
-    left: 8px;
-    border-top-left-radius: 45px;
-    width: 179px;
-    border-bottom-left-radius: 46px;
-  }
-
-  .LeftBottom {
-    width: 214px;
-    bottom: -15px;
-    left: 5px;
-    height: 190px;
-    background: $colorMain;
-  }
-
-  .Cutout {
-    left: -8px;
-    top: 64px;
-    width: 147px;
-    height: 134px;
-  }
-
   img {
     z-index: 3;
     margin-top: 16px;

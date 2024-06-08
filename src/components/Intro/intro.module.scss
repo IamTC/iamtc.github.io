@@ -1,7 +1,14 @@
 @import "/src/styles/variables";
 
 $colorMain: rgb(170, 49, 226);
-$colorAccent: rgb(159, 148, 255);
+$colorAccent: rgb(57, 50, 117);
+$colorSecondary: rgb(232, 6, 228);
+$fontGradient: linear-gradient(
+  45deg,
+  $colorMain 0%,
+  $colorAccent 40%,
+  $colorSecondary 80%
+);
 
 .IntroContainer {
   height: 100vh;
@@ -18,7 +25,7 @@ $colorAccent: rgb(159, 148, 255);
   .name {
     margin: 0;
     font-size: 3.5rem;
-    background: linear-gradient(45deg, $colorMain, $colorAccent);
+    background: $fontGradient;
     background-size: 200% 200%;
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -29,27 +36,16 @@ $colorAccent: rgb(159, 148, 255);
   .subtext {
     margin: 0;
     margin-top: 0.25rem;
-    background: linear-gradient(45deg, $colorMain, $colorAccent);
+    background: $fontGradient;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    // animation: colorChange 2s linear infinite;
   }
 
   .Cursor {
-    animation: blink 200ms linear infinite;
-  }
-}
-
-@include keyframes(colorChange) {
-  0% {
-    background: #000;
-  }
-  50% {
-    background: #fff;
-  }
-  100% {
-    background: #000;
+    &:not(.typing) {
+      animation: blink 500ms linear infinite;
+    }
   }
 }
 

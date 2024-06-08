@@ -1,21 +1,5 @@
-# Astro Starter Kit: Portfolio
+# HI! IamTC 🐘
 
-```
-npm init astro -- --template portfolio
-```
+`Frontend Engineer | Angular | React ` 📑
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm start`     | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/thiwanka-dissanayaka/), [Twitter](https://twitter.com/codenameTeeCee)

@@ -12,7 +12,9 @@ function Intro() {
   const currentSubTextsIndex = useRef(0);
   const currentTextIndex = useRef(0);
   const [occupation, setOccupation] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
 
+  // TODO: Create a shared component for typing indicator
   useEffect(() => {
     const intervalId = setInterval(() => {
       const text = subTexts[currentSubTextsIndex.current] ?? "";
@@ -30,6 +32,8 @@ function Intro() {
       } else {
         currentTextIndex.current++;
       }
+
+      setIsTyping(!!character);
     }, 125);
 
     return () => {
@@ -39,11 +43,15 @@ function Intro() {
 
   return (
     <div className={Styles.IntroContainer}>
-      <div class={Styles.title}>
-        <h1 class={Styles.name}>Thiwanka Dissanayaka</h1>
-        <h2 class={Styles.subtext}>
+      <div className={Styles.title}>
+        <h1 className={Styles.name}>Thiwanka Dissanayaka</h1>
+        <h2 className={Styles.subtext}>
           {occupation}
-          <span class={Styles.Cursor}>_</span>
+          <span
+            className={`${Styles.Cursor} ${isTyping ? Styles.typing : null}`}
+          >
+            |
+          </span>
         </h2>
       </div>
 

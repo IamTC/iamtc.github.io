@@ -13,8 +13,8 @@ const { content } = Astro.props;
     <MainHead title={content.title} />
   </head>
   <body>
-    <NavBar />
     <div class="wrapper wrapper__readable">
+      <NavBar />
       <div class="content">
         <slot />
       </div>

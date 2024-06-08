@@ -12,7 +12,14 @@ const projects = await Astro.glob("./project/**/*.md");
 // const featuredProject = projects[0];
 ---
 
-<Layout content={{ lang: "en", title: "Home", tags: [], description: "AAA" }}>
+<Layout
+  content={{
+    lang: "en",
+    title: "Thiwanka Dissanayaka",
+    tags: ["portfolio", "thiwanka", "dissanayaka", "thiwanka dissanayaka"],
+    description: "Thiwanka Dissanayaka",
+  }}
+>
   <div class="main">
     <Intro client:load />
   </div>

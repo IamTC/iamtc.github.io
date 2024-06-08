@@ -1,0 +1,16 @@
+.NavBar {
+  display: flex;
+  padding: 1rem;
+}
+
+.Links {
+  margin-left: auto;
+
+  .Link {
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 0.5rem;
+    }
+  }
+}
