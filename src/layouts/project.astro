@@ -1,7 +1,7 @@
 ---
-import Footer from "../components/Footer/index.jsx";
 import MainHead from "../components/MainHead.astro";
 import NavBar from "../components/NavBar/navbar";
+import NeatGradientBackground from "../components/NeatGradientBackground";
 
 import "./project.css";
 
@@ -14,11 +14,13 @@ const { content } = Astro.props;
   </head>
   <body>
     <div class="wrapper wrapper__readable">
-      <NavBar />
+      <NavBar client:only />
+      <!-- <BackgroundCanvas client:only /> -->
+      <NeatGradientBackground client:only />
       <div class="content">
         <slot />
       </div>
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </body>
 </html>

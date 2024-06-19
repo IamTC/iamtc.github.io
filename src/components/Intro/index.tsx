@@ -8,6 +8,7 @@ function Intro() {
     "Software Engineer",
     "Frontend Developer",
     "Gamer",
+    "Loves to hike",
   ] as const;
   const currentSubTextsIndex = useRef(0);
   const currentTextIndex = useRef(0);
@@ -55,7 +56,7 @@ function Intro() {
         </h2>
       </div>
 
-      <div class="prof-image">
+      <div className={Styles.ProfImage}>
         <ProfileImage path="assets/meRelit.png" />
       </div>
     </div>

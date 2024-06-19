@@ -7,3 +7,13 @@
     @content;
   }
 }
+
+%flexParent {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexChild {
+  flex: 1;
+  min-height: 0;
+}

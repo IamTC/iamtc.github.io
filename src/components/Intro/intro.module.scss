@@ -11,15 +11,27 @@ $fontGradient: linear-gradient(
 );
 
 .IntroContainer {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex: 1;
+
+  @media (width < 768px) {
+    flex-direction: column;
+
+    .title {
+      order: 2;
+    }
+
+    .ProfImage {
+      align-self: flex-start;
+      margin: 0 50px;
+    }
+  }
 
   .title {
-    margin-right: 100px;
-    margin-left: 50px;
+    margin: 0 50px;
   }
 
   .name {
