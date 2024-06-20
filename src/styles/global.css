@@ -11,6 +11,10 @@ html {
     font-family: 'Dosis', sans-serif;
 }
 
+a[href="https://neat.firecms.co"] {
+    visibility: hidden;
+}
+
 body {
     padding: 0;
     margin: 0;

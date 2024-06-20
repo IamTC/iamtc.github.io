@@ -8,7 +8,7 @@ function Intro() {
     "Software Engineer",
     "Frontend Developer",
     "Gamer",
-    "Loves to hike",
+    "Hiker",
   ] as const;
   const currentSubTextsIndex = useRef(0);
   const currentTextIndex = useRef(0);
