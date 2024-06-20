@@ -9,13 +9,14 @@
   "devDependencies": {
     "@astrojs/renderer-preact": "^0.5.0",
     "@types/three": "^0.165.0",
-    "astro": "^2.0.14",
-    "sass": "^1.58.3"
+    "astro": "^4.10.3",
+    "sass": "^1.58.3",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@astrojs/preact": "^2.0.3",
+    "@astrojs/preact": "^3.5.0",
     "@firecms/neat": "^0.2.2",
-    "preact": "^10.12.1",
+    "preact": "^10.22.0",
     "three.js": "^0.77.1"
   }
 }
