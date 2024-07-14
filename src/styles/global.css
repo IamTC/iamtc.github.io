@@ -4,11 +4,13 @@
     --background-gradient-1: #cad0ff;
     --background-gradient-2: #FFF;
     --max-width: 1400px;
+    --primary-color: #fff;
+    --secondary-color: 188, 227, 140;
 }
 
 html {
     background-color: #fff;
-    font-family: 'Dosis', sans-serif;
+    font-family: Inter, 'Dosis', sans-serif;
 }
 
 a[href="https://neat.firecms.co"] {
@@ -21,6 +23,7 @@ body {
     line-height: 1.5;
     min-height: 100svh;
     position: relative;
+    color: #fcfbee;
     /* background: #c2e59c;  
     background: -webkit-linear-gradient(to bottom, var(--background-gradient-1), var(--background-gradient-2)); 
     background: linear-gradient(to bottom, var(--background-gradient-1), var(--background-gradient-2)); 

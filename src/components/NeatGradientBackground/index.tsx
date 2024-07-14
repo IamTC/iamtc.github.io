@@ -6,23 +6,23 @@ import Styles from "./styles.module.scss";
 export const config: NeatConfig = {
   colors: [
     {
-      color: "#c7dee4",
+      color: "#071641",
       enabled: true,
     },
     {
-      color: "#f1e8ca",
+      color: "#0f2a3f",
       enabled: true,
     },
     {
-      color: "#ffffff",
+      color: "#252008",
       enabled: true,
     },
     {
-      color: "#e7d5de",
+      color: "#24052e",
       enabled: true,
     },
     {
-      color: "#cec7da",
+      color: "#251049",
       enabled: false,
     },
   ],
@@ -31,7 +31,7 @@ export const config: NeatConfig = {
   verticalPressure: 3,
   waveFrequencyX: 2,
   waveFrequencyY: 2,
-  waveAmplitude: 5,
+  waveAmplitude: 2,
   shadows: 6,
   highlights: 4,
   colorBrightness: 0.9,
@@ -56,7 +56,10 @@ const NeatGradientBackground = () => {
   }, []);
 
   return createPortal(
-    <canvas className={Styles.CanvasElement} ref={canvasEl}></canvas>,
+    <div className={Styles.CanvasElement}>
+      <canvas ref={canvasEl}></canvas>
+      <div className={Styles.placeholder}></div>
+    </div>,
     document.documentElement
   );
 };

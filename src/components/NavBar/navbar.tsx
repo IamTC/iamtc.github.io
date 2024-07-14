@@ -34,10 +34,18 @@ function NavBar() {
       }`}
     >
       <div className={Style.Links}>
-        <a href="https://github.com/IamTC" className={Style.Link}>
+        <a
+          href="https://github.com/IamTC"
+          className={Style.Link}
+          title="IamTC | GitHub"
+        >
           <img src="./assets/icons/github.svg" alt="Github" />
         </a>
-        <a href="https://www.linkedin.com/in/thiwadiss/" className={Style.Link}>
+        <a
+          href="https://www.linkedin.com/in/thiwadiss/"
+          className={Style.Link}
+          title="Thiwanka Dissanayaka | LinkedIn"
+        >
           <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
         </a>
       </div>

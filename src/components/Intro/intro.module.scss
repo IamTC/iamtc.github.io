@@ -1,5 +1,6 @@
 @import "/src/styles/variables";
 
+$headerHeight: 5.5rem;
 $colorMain: rgb(170, 49, 226);
 $colorAccent: rgb(57, 50, 117);
 $colorSecondary: rgb(232, 6, 228);
@@ -15,7 +16,8 @@ $fontGradient: linear-gradient(
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex: 1 0 auto;
+  flex: 1 0 calc(100vh - (#{$headerHeight} + 2rem)); // header height + wrapper top and bottom padding
+  padding: 1rem;
 
   @media (width < 768px) {
     flex-direction: column;
@@ -52,9 +54,12 @@ $fontGradient: linear-gradient(
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 
   .Cursor {
+    user-select: none;
     &:not(.typing) {
       animation: blink 500ms linear infinite;
     }

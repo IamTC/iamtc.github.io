@@ -1,0 +1,48 @@
+:root {
+  --gutter: 20px;
+}
+
+.ExperienceWrapper {
+  padding: 1rem;
+}
+
+.Experience {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+
+  &:not(.Disabled) {
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: rgba($color: rgb(209, 192, 240), $alpha: 0.2);
+  }
+}
+
+.Period {
+  flex: 0 0 12%;
+}
+
+.Details {
+  flex: 1;
+}
+
+.Employer {
+  margin: 0;
+}
+
+.Position {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.CardFooter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

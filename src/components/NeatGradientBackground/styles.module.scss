@@ -3,6 +3,19 @@
   z-index: -1;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+
+  canvas {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .placeholder {
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(247, 227, 189);
+  }
 }

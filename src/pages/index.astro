@@ -1,16 +1,19 @@
 ---
 // Layout
+import Experience from "../components/Experience";
 import Intro from "../components/Intro";
+import Projects from "../components/Projects";
 import Layout from "../layouts/project.astro";
+import {experience} from '../experience';
+import {projects} from '../projects';
 
 // Styles
 import "../styles/global.css";
 import "../styles/index.css";
-
-// Data Fetching: List all Markdown posts in the repo.
-const projects = await Astro.glob("./project/**/*.md");
-// const featuredProject = projects[0];
 ---
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 <Layout
   content={{
@@ -22,5 +25,8 @@ const projects = await Astro.glob("./project/**/*.md");
 >
   <div class="main">
     <Intro client:load />
+    <Experience title="Experience" projects={experience}client:idle></Experience>
+    <Experience title="Projects" projects={projects}client:idle></Experience>
+    <Projects></Projects>
   </div>
 </Layout>

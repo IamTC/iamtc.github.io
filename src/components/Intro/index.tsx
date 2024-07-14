@@ -7,8 +7,7 @@ function Intro() {
   const subTexts = [
     "Software Engineer",
     "Frontend Developer",
-    "Gamer",
-    "Hiker",
+    "Freelancer",
   ] as const;
   const currentSubTextsIndex = useRef(0);
   const currentTextIndex = useRef(0);
@@ -46,14 +45,14 @@ function Intro() {
     <div className={Styles.IntroContainer}>
       <div className={Styles.title}>
         <h1 className={Styles.name}>Thiwanka Dissanayaka</h1>
-        <h2 className={Styles.subtext}>
+        <p className={Styles.subtext} aria-label="what I love">
           {occupation}
           <span
             className={`${Styles.Cursor} ${isTyping ? Styles.typing : null}`}
           >
             |
           </span>
-        </h2>
+        </p>
       </div>
 
       <div className={Styles.ProfImage}>
