@@ -10,7 +10,7 @@
 
 html {
     background-color: #fff;
-    font-family: Inter, 'Dosis', sans-serif;
+    font-family: "Nunito", 'Dosis', sans-serif;
 }
 
 a[href="https://neat.firecms.co"] {
@@ -21,9 +21,9 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.5;
-    min-height: 100svh;
     position: relative;
-    color: #fcfbee;
+    color: #f0eefc;
+    height: 100%;
     /* background: #c2e59c;  
     background: -webkit-linear-gradient(to bottom, var(--background-gradient-1), var(--background-gradient-2)); 
     background: linear-gradient(to bottom, var(--background-gradient-1), var(--background-gradient-2)); 
@@ -33,12 +33,6 @@ body {
 
 * {
     box-sizing: border-box;
-}
-
-.main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
 }
 
 @media (width < 768px) {

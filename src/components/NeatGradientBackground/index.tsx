@@ -6,39 +6,31 @@ import Styles from "./styles.module.scss";
 export const config: NeatConfig = {
   colors: [
     {
-      color: "#071641",
+      color: "#030c24",
       enabled: true,
     },
     {
-      color: "#0f2a3f",
+      color: "#07131d",
       enabled: true,
     },
     {
-      color: "#252008",
+      color: "#130216",
       enabled: true,
-    },
-    {
-      color: "#24052e",
-      enabled: true,
-    },
-    {
-      color: "#251049",
-      enabled: false,
     },
   ],
-  speed: 4,
+  speed: 1,
   horizontalPressure: 3,
   verticalPressure: 3,
-  waveFrequencyX: 2,
-  waveFrequencyY: 2,
-  waveAmplitude: 2,
-  shadows: 6,
-  highlights: 4,
-  colorBrightness: 0.9,
+  waveFrequencyX: 1,
+  waveFrequencyY: 1,
+  waveAmplitude: 1,
+  shadows: 10,
+  highlights: 6,
+  colorBrightness: 1,
   colorSaturation: 0.5,
   wireframe: false,
-  colorBlending: 5,
-  backgroundColor: "#003FFF",
+  colorBlending: 1,
+  backgroundColor: "#100329",
   backgroundAlpha: 1,
   resolution: 1,
 };
@@ -53,6 +45,7 @@ const NeatGradientBackground = () => {
 
       return () => neat.destroy();
     }
+    return;
   }, []);
 
   return createPortal(

@@ -13,7 +13,7 @@ import "../styles/index.css";
 ---
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
 <Layout
   content={{
@@ -24,9 +24,14 @@ import "../styles/index.css";
   }}
 >
   <div class="main">
-    <Intro client:load />
-    <Experience title="Experience" projects={experience}client:idle></Experience>
-    <Experience title="Projects" projects={projects}client:idle></Experience>
-    <Projects></Projects>
+    <div class="left">
+      <Experience title="Experience" projects={experience}client:idle></Experience>
+      <Experience title="Projects" projects={projects}client:idle></Experience>
+    </div>
+    <div class="right">
+      <div class="section">
+        <Intro client:load />
+      </div>
+    </div>
   </div>
 </Layout>

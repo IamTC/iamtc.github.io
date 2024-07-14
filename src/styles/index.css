@@ -1,4 +1,33 @@
 .main {
     height: 100%;
     line-height: normal;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.left {
+    flex: 1;
+    order: 2;
+}
+
+.right {
+    top: 1rem;
+    order: 1;
+}
+
+@media (width > 1024px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .right {
+        position: sticky;
+        order: 3;
+        max-width: 30%;
+    }
+
+    .section {
+        border-left: 1px solid rgb(0, 255, 255);
+    }
 }

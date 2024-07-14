@@ -14,9 +14,6 @@ $fontGradient: linear-gradient(
 .IntroContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex: 1 0 calc(100vh - (#{$headerHeight} + 2rem)); // header height + wrapper top and bottom padding
   padding: 1rem;
 
   @media (width < 768px) {
@@ -28,34 +25,32 @@ $fontGradient: linear-gradient(
 
     .ProfImage {
       align-self: flex-start;
-      margin: 0 50px;
     }
   }
 
   .title {
-    margin: 0 50px;
   }
 
   .name {
     margin: 0;
-    font-size: 3.5rem;
-    background: $fontGradient;
-    background-size: 200% 200%;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorGradient 2s linear infinite;
+    // font-size: 3.5rem;
+    // background: $fontGradient;
+    // background-size: 200% 200%;
+    // background-clip: border-box;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // animation: colorGradient 2s linear infinite;
   }
 
   .subtext {
     margin: 0;
     margin-top: 0.25rem;
-    background: $fontGradient;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 1.5rem;
+    // background: $fontGradient;
+    // background-clip: border-box;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // font-weight: 700;
+    // font-size: 1.5rem;
   }
 
   .Cursor {

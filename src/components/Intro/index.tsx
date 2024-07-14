@@ -45,18 +45,19 @@ function Intro() {
     <div className={Styles.IntroContainer}>
       <div className={Styles.title}>
         <h1 className={Styles.name}>Thiwanka Dissanayaka</h1>
-        <p className={Styles.subtext} aria-label="what I love">
+
+        <p>
+          Well versed software engineer focused on developing user centric
+          solutions with an emphasis on attention to detail.
+        </p>
+        {/* <p className={Styles.subtext} aria-label="what I love">
           {occupation}
           <span
             className={`${Styles.Cursor} ${isTyping ? Styles.typing : null}`}
           >
             |
           </span>
-        </p>
-      </div>
-
-      <div className={Styles.ProfImage}>
-        <ProfileImage path="assets/meRelit.png" />
+        </p> */}
       </div>
     </div>
   );
