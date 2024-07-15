@@ -20,6 +20,16 @@
     order: 1;
 }
 
+.link {
+    margin-right: 1rem;
+    color: rgb(202, 201, 197);
+    transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+    color: rgb(255, 255, 255);
+}
+
 @media (width > 1024px) {
     .main {
         flex-direction: row;
