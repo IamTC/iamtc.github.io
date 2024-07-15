@@ -4,14 +4,6 @@ export const projects: Project[] = [
   {
     title: "LankaDealz (Freelance)",
     link: "https://lankadealz.com/",
-    positions: [
-      {
-        period: {
-          from: new Date(2023, 2, 1),
-          to: new Date(2024, 2, 1),
-        },
-      },
-    ],
     summary: `
       Worked with LankaDealz to build an ecommerce portal using React,
       Typescript, Styled-components, Redux Toolkit, .NET Web API and MSSQL.
@@ -27,53 +19,33 @@ export const projects: Project[] = [
       "styled-components",
       "Azure",
     ],
+    images: ["lankadealz.jpg"],
   },
   {
     title: "RoomHunt (Freelance)",
     link: "https://roomhunt.lk/",
-    positions: [
-      {
-        period: {
-          from: new Date(2021, 2, 1),
-          to: new Date(2021, 9, 1),
-        },
-      },
-    ],
     summary: `
       Developed a portal for auctioning unreserved hotel rooms using Angular, Typescript, Saas and NGRX.
 Developed with fluid design to be responsive across any device. Achieved a
 90% lighthouse score.
     `,
     tags: ["Typescript", "Angular", "NGRX", "SASS"],
+    images: ["roomhunt.jpg"],
   },
   {
-    title: "HygieneZone (Freelance)",
-    positions: [
-      {
-        period: {
-          from: new Date(2021, 2, 1),
-          to: new Date(2021, 9, 1),
-        },
-      },
-    ],
+    title: "Subtraid (Freelance)",
     summary: `
-      Implemented a web app for tracking and managing COVID related incidents in hotels. Developed using Angular and Typescript.
+      ERP software built for production company. Implemented using Angular. 
     `,
     tags: ["Typescript", "Angular"],
+    images: ["subtraid.jpg"],
   },
   {
     title: "TripToMedic  (Freelance)",
-    positions: [
-      {
-        period: {
-          from: new Date(2019, 2, 1),
-          to: new Date(2020, 12, 1),
-        },
-      },
-    ],
     summary: `
       Built a medical tourism platform with Angular, Typescript and NGRX. Used Socket.io, WebRTC and NodeJS to implement alive video communication portal..
     `,
     tags: ["Typescript", "Angular", "NGRX", "Socket.io", "WebRTC", "NodeJS"],
+    images: ["t2m.jpg", "t2m-chat.jpg"],
   },
 ];

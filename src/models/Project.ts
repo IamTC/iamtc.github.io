@@ -1,5 +1,5 @@
 export type Position = {
-  position?: string;
+  position: string;
   period: {
     from: Date;
     to: Date;
@@ -9,7 +9,8 @@ export type Position = {
 export type Project = {
   title: string;
   link?: string;
-  positions: Position[];
+  positions?: Position[];
   summary: string;
   tags: string[];
+  images?: string[];
 };

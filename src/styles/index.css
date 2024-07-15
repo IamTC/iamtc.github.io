@@ -11,6 +11,10 @@
     order: 2;
 }
 
+.info {
+    padding: 0 1rem;
+}
+
 .right {
     top: 1rem;
     order: 1;
@@ -19,12 +23,17 @@
 @media (width > 1024px) {
     .main {
         flex-direction: row;
+        column-gap: 80px;
     }
 
     .right {
         position: sticky;
         order: 3;
         max-width: 30%;
+    }
+
+    .right > .section {
+        padding-left: 2rem;
     }
 
     .section {

@@ -45,6 +45,7 @@ function Intro() {
     <div className={Styles.IntroContainer}>
       <div className={Styles.title}>
         <h1 className={Styles.name}>Thiwanka Dissanayaka</h1>
+        <h3>Senior Software Engineer</h3>
 
         <p>
           Well versed software engineer focused on developing user centric

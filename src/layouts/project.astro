@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer";
 import MainHead from "../components/MainHead.astro";
 import NavBar from "../components/NavBar/navbar";
 import NeatGradientBackground from "../components/NeatGradientBackground";
@@ -20,7 +21,7 @@ const { content } = Astro.props;
       <div class="content">
         <slot />
       </div>
-      <!-- <Footer /> -->
+      <Footer />
     </div>
   </body>
 </html>

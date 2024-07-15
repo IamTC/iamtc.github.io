@@ -1,4 +1,3 @@
-import { today } from "./components/Experience";
 import { Project } from "./models/Project";
 
 export const experience: Project[] = [
@@ -10,7 +9,7 @@ export const experience: Project[] = [
         position: "Senior Software Engineer",
         period: {
           from: new Date(2023, 5, 1),
-          to: today,
+          to: new Date(),
         },
       },
       {
