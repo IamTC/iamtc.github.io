@@ -1,55 +1,52 @@
-import { useEffect, useRef, useState } from "preact/hooks";
-import Style from "./navbar.module.scss";
+import { useCallback, useEffect, useState } from "preact/hooks";
+import Styles from "./navbar.module.scss";
+
+const links = ["experience", "projects", "education", "skills"];
 
 function NavBar() {
-  const lastScrollY = useRef(
-    window.scrollY ?? document.documentElement.scrollTop
+  const [activeEl, setActiveEl] = useState("experience");
+
+  const handleIntersection = useCallback(
+    (elements: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+      console.log(elements);
+      const intersect = (elements || []).find((el) => el.isIntersecting);
+      if (intersect) {
+        setActiveEl(intersect.target.id);
+      }
+    },
+    []
   );
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+    const options = {
+      rootMargin: "16px",
+      threshold: 0.6,
     };
-  });
 
-  const handleScroll = (event: Event) => {
-    const scrollY = window.scrollY ?? document.documentElement.scrollTop;
+    const observer = new IntersectionObserver(handleIntersection, options);
 
-    if (scrollY > lastScrollY.current) {
-      setScrollDirection("down");
-    } else if (scrollY < lastScrollY.current) {
-      setScrollDirection("up");
-    }
+    links.forEach((t) => {
+      const el = document.querySelector(`#${t}`);
+      if (el) {
+        observer.observe(el);
+      }
+    });
 
-    lastScrollY.current = Math.abs(scrollY);
-  };
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div
-      className={`${Style.NavBar} ${
-        scrollDirection === "up" ? Style.Scrolled : ""
-      }`}
-    >
-      <div className={Style.Links}>
+    <nav className={Styles.NavBar}>
+      {links.map((link, i) => (
         <a
-          href="https://github.com/IamTC"
-          className={Style.Link}
-          title="IamTC | GitHub"
+          href={`#${link}`}
+          key={i}
+          className={`${Styles.Link} ${activeEl === link ? Styles.Active : ""}`}
         >
-          <img src="./assets/icons/github.svg" alt="Github" />
+          {link}
         </a>
-        <a
-          href="https://www.linkedin.com/in/thiwadiss/"
-          className={Style.Link}
-          title="Thiwanka Dissanayaka | LinkedIn"
-        >
-          <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
+      ))}
+    </nav>
   );
 }
 

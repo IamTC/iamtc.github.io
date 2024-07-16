@@ -1,0 +1,21 @@
+.Socials {
+  text-align: center;
+
+  @media (width > 1024px) {
+    text-align: left;
+  }
+}
+
+.Link {
+  margin: 2rem;
+  color: rgb(202, 201, 197);
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  @media (width > 1024px) {
+    margin: 0 1rem 0 0;
+  }
+}

@@ -20,13 +20,17 @@ const getDisplayDate = (date: Date | undefined) => {
   return date.getFullYear();
 };
 
-const Experience = (props: { projects: Project[]; title: string }) => {
+const Experience = (props: {
+  projects: Project[];
+  title: string;
+  id?: string;
+}) => {
   const handleClick = (experience: Project) => {
     window.open(experience.link, "_blanck")?.focus();
   };
 
   return (
-    <div className={Styles.ExperienceWrapper}>
+    <div className={Styles.ExperienceWrapper} id={props.id}>
       <h3>{props.title}</h3>
 
       {props.projects.map((exp, index) => (
@@ -68,6 +72,8 @@ const Experience = (props: { projects: Project[]; title: string }) => {
               )}
             </Card.Footer>
           </Card>
+
+          <div className={Styles.Highlight} aria-hidden></div>
         </div>
       ))}
     </div>
